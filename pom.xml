@@ -37,6 +37,7 @@
 	<modules>
 		<module>groovy</module>
 		<module>javascript</module>
+		<module>jruby</module>
 	</modules>
 
 	<scm>
