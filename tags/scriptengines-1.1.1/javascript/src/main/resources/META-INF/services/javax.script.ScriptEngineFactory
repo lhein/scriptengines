@@ -1,0 +1,2 @@
+com.google.code.scriptengines.js.javascript.RhinoScriptEngineFactory
+com.google.code.scriptengines.js.javascript.EmbeddedRhinoScriptEngineFactory
