@@ -40,6 +40,8 @@ import org.codehaus.groovy.runtime.InvokerHelper;
 
 public class GroovyScriptEngineFactory implements ScriptEngineFactory {
 
+    private static final GroovyScriptEngine SCRIPT_ENGINE = new GroovyScriptEngine();
+
     private static String VERSION = "1.5.6";
     private static List names;
     private static List extensions;
@@ -104,7 +106,7 @@ public class GroovyScriptEngineFactory implements ScriptEngineFactory {
     }
 
     public ScriptEngine getScriptEngine() {
-        return new GroovyScriptEngine();
+        return SCRIPT_ENGINE;
     }
 
     public String getMethodCallSyntax(String obj, String method, String args[]) {
